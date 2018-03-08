@@ -21,12 +21,12 @@
   <parent>
     <groupId>io.openshift</groupId>
     <artifactId>booster-parent</artifactId>
-    <version>15</version>
+    <version>17</version>
   </parent>
 
   <groupId>io.openshift.booster</groupId>
   <artifactId>crud-vertx</artifactId>
-  <version>20-SNAPSHOT</version>
+  <version>22-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>crud</name>
@@ -60,6 +60,10 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-jdbc-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-sql-common</artifactId>
     </dependency>
 
     <dependency>
@@ -142,6 +146,7 @@
         </executions>
         <configuration>
           <redeploy>true</redeploy>
+
         </configuration>
       </plugin>
     </plugins>
